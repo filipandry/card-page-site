@@ -18,7 +18,7 @@ export const useStyles = createUseStyles({
     background: "#fff"
   },
   background: {
-    width: (props: ICardProps) => props.WindowSize.width,
+    width: (props: ICardProps) => props.WindowSize?.width,
     height: "100vh",
     position: "absolute",
     top: 0,
@@ -26,7 +26,7 @@ export const useStyles = createUseStyles({
     background: "#ccc"
   },
   backgroundNewLeft: {
-    width: (props: ICardProps) => props.WindowSize.width,
+    width: (props: ICardProps) => props.WindowSize?.width,
     height: "100vh",
     position: "absolute",
     top: 0,
@@ -34,7 +34,7 @@ export const useStyles = createUseStyles({
     background: "#ccc"
   },
   backgroundNewRight: {
-    width: (props: ICardProps) => props.WindowSize.width,
+    width: (props: ICardProps) => props.WindowSize?.width,
     height: "100vh",
     position: "absolute",
     top: 0,
@@ -42,7 +42,7 @@ export const useStyles = createUseStyles({
     background: "#ccc"
   },
   backgroundOld: {
-    width: (props: ICardProps) => props.WindowSize.width,
+    width: (props: ICardProps) => props.WindowSize?.width,
     height: "100vh",
     position: "absolute",
     top: 0,

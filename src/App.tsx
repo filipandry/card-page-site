@@ -7,6 +7,7 @@ import useWindowSize from "./hooks/useWindowSize";
 export default function App() {
   const classes = useAppStyles();
   const windowSize = useWindowSize();
+
   const pages: IPage[] = [
     {
       Background: (
@@ -117,6 +118,7 @@ export default function App() {
       Content: <div>PAGE 6</div>
     }
   ];
+
   return (
     <div className={classes.app}>
       <Card Pages={pages} WindowSize={windowSize} />

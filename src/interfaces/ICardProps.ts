@@ -1,6 +1,6 @@
 import { IPage, IWindowSize } from "./";
 
-export interface IProps {
+export interface ICardProps {
   Pages: IPage[];
   WindowSize: IWindowSize;
 }

@@ -81,11 +81,7 @@ const Card = (props: ICardProps) => {
           {oldPage.Background}
         </div>
       )}
-      <div className={classes.root}>
-        {page + 1}/{Pages.length}
-        {newPage.Content}
-        {oldPage && oldPage.Content}
-      </div>
+      <div className={classes.root}>{oldPage?.Content || newPage.Content}</div>
       <span className={classes.previous} onClick={previousPage}>
         PREVIOUS
       </span>

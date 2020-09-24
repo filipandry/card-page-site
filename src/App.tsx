@@ -3,6 +3,16 @@ import { Card } from "./components";
 import { IPage } from "./interfaces/IPage";
 import { useAppStyles } from "./AppStyle";
 import useWindowSize from "./hooks/useWindowSize";
+import {
+  Page1Content,
+  Page1Background,
+  Page2Content,
+  Page2Background,
+  Page3Content,
+  Page3Background,
+  Page4Content,
+  Page4Background
+} from "./pages";
 
 export default function App() {
   const classes = useAppStyles();
@@ -10,112 +20,20 @@ export default function App() {
 
   const pages: IPage[] = [
     {
-      Background: (
-        <div
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        ></div>
-      ),
-      Content: <div>PAGE 1</div>
+      Background: <Page1Background />,
+      Content: <Page1Content />
     },
     {
-      Background: (
-        <div
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1293120/pexels-photo-1293120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        ></div>
-      ),
-      Content: <div>PAGE 2</div>
+      Background: <Page2Background />,
+      Content: <Page2Content />
     },
     {
-      Background: (
-        <div
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        ></div>
-      ),
-      Content: <div>PAGE 3</div>
+      Background: <Page3Background />,
+      Content: <Page3Content />
     },
     {
-      Background: (
-        <div
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1293120/pexels-photo-1293120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        ></div>
-      ),
-      Content: <div>PAGE 4</div>
-    },
-    {
-      Background: (
-        <div
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        ></div>
-      ),
-      Content: <div>PAGE 5</div>
-    },
-    {
-      Background: (
-        <div
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/1293120/pexels-photo-1293120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        ></div>
-      ),
-      Content: <div>PAGE 6</div>
+      Background: <Page4Background />,
+      Content: <Page4Content />
     }
   ];
 

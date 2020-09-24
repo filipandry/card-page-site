@@ -51,17 +51,27 @@ export const useStyles = createUseStyles({
   },
   next: {
     position: "absolute",
-    right: 40,
+    right: 20,
     top: "50%",
     transform: "translateY(-50%)",
-    cursor: "pointer"
+    cursor: "pointer",
+    padding: 5,
+    background: "rgba(0,0,0,0.2)",
+    "&:hover": {
+      background: "rgba(0,0,0,0.25)"
+    }
   },
   previous: {
     position: "absolute",
-    left: 40,
+    left: 20,
     top: "50%",
     transform: "translateY(-50%)",
-    cursor: "pointer"
+    cursor: "pointer",
+    padding: 5,
+    background: "rgba(0,0,0,0.2)",
+    "&:hover": {
+      background: "rgba(0,0,0,0.25)"
+    }
   },
   animateLeft: {
     transition: "all .5s linear",
@@ -78,5 +88,15 @@ export const useStyles = createUseStyles({
   animateOldRight: {
     transition: "all .5s linear",
     left: "-100%"
+  },
+  title: {
+    position: "absolute",
+    textAlign: "center",
+    top: "5vh",
+    left: "50%",
+    transform: "translateX(-50%)",
+    background: "rgba(0,0,0,0.1)",
+    padding: 10,
+    fontSize: 30
   }
 });

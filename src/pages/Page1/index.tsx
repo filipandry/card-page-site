@@ -30,3 +30,5 @@ export const Page1Background = () => {
     ></div>
   );
 };
+
+export const Page1Title = "Page";

@@ -30,3 +30,5 @@ export const Page4Background = () => {
     ></div>
   );
 };
+
+export const Page4Title = "Wordpress";

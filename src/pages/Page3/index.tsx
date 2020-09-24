@@ -30,3 +30,5 @@ export const Page3Background = () => {
     ></div>
   );
 };
+
+export const Page3Title = "Studio (.net core)";

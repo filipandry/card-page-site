@@ -30,3 +30,5 @@ export const Page2Background = () => {
     ></div>
   );
 };
+
+export const Page2Title = "Pilif.eu";
